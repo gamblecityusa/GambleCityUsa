@@ -56,7 +56,6 @@ const BlogIndex = props => {
             key={post.node.wordpress_id}
             title={post.node.title}
             excerpt={post.node.excerpt}
-            media={post.node.featured_image_src}
             slug={post.node.slug}
             index={index}
           />
@@ -115,7 +114,6 @@ export const query = graphql`
           title
           slug
           excerpt
-          featured_image_src
         }
       }
     }
